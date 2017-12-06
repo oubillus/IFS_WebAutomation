@@ -8,10 +8,7 @@
       <class name="com.ifs.tests.SignInPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="verifySignInSingleFailed"/>
           <include name="verifySignInSucessfully"/>
-          <include name="verifySignInEmpty"/>
-          <include name="verifySignInFailed"/>
           <include name="initializeTestBaseSetup"/>
           <include name="tearDown"/>
         </methods>

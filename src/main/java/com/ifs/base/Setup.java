@@ -16,7 +16,7 @@ import org.testng.annotations.Parameters;
 public class Setup {
 	
 	private WebDriver driver;
-	static String driverPath = "/users/oubillus/documents/IFS/";
+	static String driverPath = "C:\\Users\\oubillus\\Desktop\\ASD\\IFS\\";
 
 			
 		public WebDriver getDriver() {

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 4 failed,   </span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,25 +102,34 @@
                     <div class="method-list-content failed suite-IFS_Project">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInEmpty">verifySignInEmpty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInFailed">verifySignInFailed</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInSingleFailed">verifySignInSingleFailed</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInSucessfully">verifySignInSucessfully</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-IFS_Project -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-IFS_Project" class="hide-methods passed suite-IFS_Project"> (hide)</a> <!-- hide-methods passed suite-IFS_Project -->
+                      <a href="#" panel-name="suite-IFS_Project" class="show-methods passed suite-IFS_Project"> (show)</a> <!-- show-methods passed suite-IFS_Project -->
+                    </span>
+                    <div class="method-list-content passed suite-IFS_Project">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInEmpty">verifySignInEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInFailed">verifySignInFailed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInSingleFailed">verifySignInSingleFailed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-IFS_Project -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -140,14 +149,28 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifySignInSucessfully">
+                  </a> <!-- verifySignInSucessfully -->
+                  <span class="method-name">verifySignInSucessfully</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [IFS Support Hub] but found [Change Password]
+	at com.ifs.tests.SignInPageTest.verifySignInSucessfully(SignInPageTest.java:79)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IFS_Project-class-failed -->
+          <div class="suite-IFS_Project-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ifs.tests.SignInPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
                   <a name="verifySignInEmpty">
                   </a> <!-- verifySignInEmpty -->
                   <span class="method-name">verifySignInEmpty</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.ifs.pageobjects.HomePage.isElementPresent(HomePage.java:67)
-	at com.ifs.tests.SignInPageTest.verifySignInEmpty(SignInPageTest.java:33)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -155,10 +178,6 @@
                   <a name="verifySignInFailed">
                   </a> <!-- verifySignInFailed -->
                   <span class="method-name">verifySignInFailed</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.ifs.tests.SignInPageTest.verifySignInFailed(SignInPageTest.java:93)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -166,27 +185,10 @@
                   <a name="verifySignInSingleFailed">
                   </a> <!-- verifySignInSingleFailed -->
                   <span class="method-name">verifySignInSingleFailed</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.ifs.pageobjects.HomePage.isElementPresent(HomePage.java:67)
-	at com.ifs.tests.SignInPageTest.verifySignInSingleFailed(SignInPageTest.java:50)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySignInSucessfully">
-                  </a> <!-- verifySignInSucessfully -->
-                  <span class="method-name">verifySignInSucessfully</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.ifs.pageobjects.HomePage.isElementPresent(HomePage.java:67)
-	at com.ifs.tests.SignInPageTest.verifySignInSucessfully(SignInPageTest.java:68)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IFS_Project-class-failed -->
+          </div> <!-- suite-IFS_Project-class-passed -->
         </div> <!-- panel IFS_Project -->
         <div panel-name="test-xml-IFS_Project" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -243,26 +245,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySignInEmpty')
+data.setCell(0, 1, 'verifySignInFailed')
 data.setCell(0, 2, 'com.ifs.tests.SignInPageTest')
-data.setCell(0, 3, 1011);
+data.setCell(0, 3, 16879);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySignInSucessfully')
+data.setCell(1, 1, 'verifySignInSingleFailed')
 data.setCell(1, 2, 'com.ifs.tests.SignInPageTest')
-data.setCell(1, 3, 1005);
+data.setCell(1, 3, 6506);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySignInFailed')
+data.setCell(2, 1, 'verifySignInSucessfully')
 data.setCell(2, 2, 'com.ifs.tests.SignInPageTest')
-data.setCell(2, 3, 1003);
+data.setCell(2, 3, 4306);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySignInSingleFailed')
+data.setCell(3, 1, 'verifySignInEmpty')
 data.setCell(3, 2, 'com.ifs.tests.SignInPageTest')
-data.setCell(3, 3, 1002);
+data.setCell(3, 3, 2969);
 window.suiteTableData['IFS_Project']= { tableData: data, tableDiv: 'times-div-IFS_Project'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-IFS_Project">
               </div> <!-- times-div-IFS_Project -->
             </div> <!-- times-div -->
@@ -295,37 +297,29 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">141 ms</span>
+                <span class="method-start">4830 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifySignInEmpty</span>
-                <span class="method-start">144 ms</span>
+                <span class="method-start">4836 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifySignInSucessfully</span>
-                <span class="method-start">1159 ms</span>
+                <span class="method-start">7807 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifySignInFailed</span>
-                <span class="method-start">2168 ms</span>
+                <span class="method-start">12118 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifySignInSingleFailed</span>
-                <span class="method-start">3173 ms</span>
+                <span class="method-start">28999 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4188 ms</span>
+                <span class="method-start">35506 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
