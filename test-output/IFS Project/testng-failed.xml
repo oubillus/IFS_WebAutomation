@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IFS Project]" guice-stage="DEVELOPMENT">
+  <parameter name="appURL" value="https://qa.team2.mobiletechtool.com/hub/index.php"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="Au_Test(failed)">
+    <classes>
+      <class name="com.ifs.tests.SignInPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifySignInSingleFailed"/>
+          <include name="verifySignInSucessfully"/>
+          <include name="verifySignInEmpty"/>
+          <include name="verifySignInFailed"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ifs.tests.SignInPageTest -->
+    </classes>
+  </test> <!-- Au_Test(failed) -->
+</suite> <!-- Failed suite [IFS Project] -->

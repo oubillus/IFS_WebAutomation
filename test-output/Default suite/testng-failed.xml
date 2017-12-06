@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.ifs.tests.ChannelPageTest">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="CreateChannel"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.ifs.tests.ChannelPageTest -->
+      <class name="com.ifs.tests.SupportSectionTest">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyCreateAnAccounPage"/>
+        </methods>
+      </class> <!-- com.ifs.tests.SupportSectionTest -->
+      <class name="com.ifs.tests.UploadMediaTest">
+        <methods>
+          <include name="OpenUpload"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.ifs.tests.UploadMediaTest -->
+      <class name="com.ifs.tests.BuildMenuTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyBuild"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ifs.tests.BuildMenuTest -->
+      <class name="com.ifs.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLoadHomePage"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ifs.tests.HomePageTest -->
+      <class name="com.ifs.tests.SignInPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifySignInSucessfully"/>
+          <include name="verifySignInEmpty"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ifs.tests.SignInPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

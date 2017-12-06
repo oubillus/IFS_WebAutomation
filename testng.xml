@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="IFS Project">
+    <parameter name="appURL" value="https://qa.team2.mobiletechtool.com/hub/index.php"/>
+    <parameter name="browserType" value="chrome"/>
+  <test name="Au_Test">
+    <classes>
+    <class name="com.ifs.tests.SignInPageTest"/>
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
