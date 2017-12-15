@@ -5,8 +5,9 @@
     <parameter name="browserType" value="chrome"/>
   <test name="Au_Test">
     <classes>
-    <class name="com.ifs.tests.SignInPageTest"/>
+    <class name="com.ifs.tests.SupportSectionTest"/>
     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+

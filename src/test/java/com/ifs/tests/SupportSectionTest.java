@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -33,9 +34,9 @@ public class SupportSectionTest extends Setup{
 			Thread.sleep(1000);
 			Assert.assertTrue(HomePage.isElementPresent(By.id("txtUsername")));
 			driver.findElement(By.id("txtUsername")).clear();
-			driver.findElement(By.id("txtUsername")).sendKeys("oscar");
+			driver.findElement(By.id("txtUsername")).sendKeys("qa");
 			Assert.assertTrue(HomePage.isElementPresent(By.id("txtPassword")));
-			driver.findElement(By.id("txtPassword")).sendKeys("qa123!98A");
+			driver.findElement(By.id("txtPassword")).sendKeys("Password234");
 			driver.findElement(By.xpath("//button[contains(.,'Sign In')]")).click();		
 			Thread.sleep(2000);
 			Assert.assertTrue(HomePage.isElementPresent(By.cssSelector("img[alt=\"IFS\"]")));
@@ -53,19 +54,28 @@ public class SupportSectionTest extends Setup{
 		    Thread.sleep(2000);
 		    driver.findElement(By.id("tab-debug")).click();	
 		    Thread.sleep(2000);
-		    JavascriptExecutor jse = (JavascriptExecutor) driver;
-		    jse.executeScript("window.scrollBy(0,350)", "");	
+
+
+		    Select oSelect = new Select(driver.findElement(By.name("user_id")));
 		    Thread.sleep(2000);
-		    driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div[4]/div/div[10]/div[1]/div[2]/div/form/table/tbody/tr/td[1]/select")).click();
-		    Thread.sleep(2000);
-		    driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div[4]/div/div[10]/div[1]/div[2]/div/form/table/tbody/tr/td[1]/select/option[2]")).click();
-		    Thread.sleep(2000);
-		    driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div[4]/div/div[10]/div[1]/div[2]/div/form/table/tbody/tr/td[2]/input")).click();	
+		    oSelect.selectByValue("111121");
 		    Thread.sleep(2000);
 		    
-		    driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div[4]/div/div[10]/div[1]/div[2]/div/form/table/tbody/tr/td[2]/input")).sendKeys(Keys.CONTROL + "2");
-		    Thread.sleep(5000);
-		    System.out.println("Checking Menu Items...");
+		    driver.findElement(By.className("btn btn-action")).click();
+		    
+//		    JavascriptExecutor jse = (JavascriptExecutor) driver;
+//		    jse.executeScript("window.scrollBy(0,350)", "");	
+//		    Thread.sleep(2000);
+//		    driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div[4]/div/div[10]/div[1]/div[2]/div/form/table/tbody/tr/td[1]/select")).click();
+//		    Thread.sleep(2000);
+//		    driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div[4]/div/div[10]/div[1]/div[2]/div/form/table/tbody/tr/td[1]/select/option[2]")).click();
+//		    Thread.sleep(2000);
+//		    driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div[4]/div/div[10]/div[1]/div[2]/div/form/table/tbody/tr/td[2]/input")).click();	
+//		    Thread.sleep(2000);
+//		    
+//		    driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div[4]/div/div[10]/div[1]/div[2]/div/form/table/tbody/tr/td[2]/input")).sendKeys(Keys.CONTROL + "2");
+//		    Thread.sleep(5000);
+//		    System.out.println("Checking Menu Items...");
 		        
 		    //driver.get("//html");
 		    /*Assert.assertTrue(HomePage.isElementPresent(By.cssSelector("img[alt=\"Sage Service Operations Logo\"]")));System.out.println("OKKK");

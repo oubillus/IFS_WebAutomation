@@ -67,9 +67,9 @@ public class SignInPageTest extends Setup{
 		//signInPage.verifyValidSignIn();
 		Assert.assertTrue(HomePage.isElementPresent(By.id("txtUsername")));
 		driver.findElement(By.id("txtUsername")).clear();
-		driver.findElement(By.id("txtUsername")).sendKeys("oscar");
+		driver.findElement(By.id("txtUsername")).sendKeys("qa");
 		Assert.assertTrue(HomePage.isElementPresent(By.id("txtPassword")));
-		driver.findElement(By.id("txtPassword")).sendKeys("qa123!98A");
+		driver.findElement(By.id("txtPassword")).sendKeys("Password234");
 		//driver.findElement(signInPage.loginBtn).click();
 		driver.findElement(By.xpath("//button[contains(.,'Sign In')]")).click();		
 		Thread.sleep(2000);

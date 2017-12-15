@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,34 +102,10 @@
                     <div class="method-list-content failed suite-IFS_Project">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInSucessfully">verifySignInSucessfully</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SupportSectionTest" class="method navigator-link" hash-for-method="verifyCreateAnAccounPage">verifyCreateAnAccounPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-IFS_Project -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-IFS_Project" class="hide-methods passed suite-IFS_Project"> (hide)</a> <!-- hide-methods passed suite-IFS_Project -->
-                      <a href="#" panel-name="suite-IFS_Project" class="show-methods passed suite-IFS_Project"> (show)</a> <!-- show-methods passed suite-IFS_Project -->
-                    </span>
-                    <div class="method-list-content passed suite-IFS_Project">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInEmpty">verifySignInEmpty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInFailed">verifySignInFailed</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IFS_Project" title="com.ifs.tests.SignInPageTest" class="method navigator-link" hash-for-method="verifySignInSingleFailed">verifySignInSingleFailed</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-IFS_Project -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,51 +120,39 @@
           <div class="suite-IFS_Project-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.ifs.tests.SignInPageTest</span>
+              <span class="class-name">com.ifs.tests.SupportSectionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySignInSucessfully">
-                  </a> <!-- verifySignInSucessfully -->
-                  <span class="method-name">verifySignInSucessfully</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [IFS Support Hub] but found [Change Password]
-	at com.ifs.tests.SignInPageTest.verifySignInSucessfully(SignInPageTest.java:79)
-... Removed 31 stack frames
+                  <a name="verifyCreateAnAccounPage">
+                  </a> <!-- verifyCreateAnAccounPage -->
+                  <span class="method-name">verifyCreateAnAccounPage</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=63.0.3239.84)
+  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;Mac-mini-de-OUBILLUS.local&apos;, ip: &apos;192.168.0.129&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13&apos;, java.version: &apos;9.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/59/y_w4s2yd1zs5l1sxd4xg5sprn7sbhl/T/.org.chromium.Chromium.zVtYz8}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.84, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2db102b9081d902a41fe4455f1fa8a50
+*** Element info: {Using=class name, value=btn btn-action}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.ifs.tests.SupportSectionTest.verifyCreateAnAccounPage(SupportSectionTest.java:64)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-IFS_Project-class-failed -->
-          <div class="suite-IFS_Project-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.ifs.tests.SignInPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySignInEmpty">
-                  </a> <!-- verifySignInEmpty -->
-                  <span class="method-name">verifySignInEmpty</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySignInFailed">
-                  </a> <!-- verifySignInFailed -->
-                  <span class="method-name">verifySignInFailed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySignInSingleFailed">
-                  </a> <!-- verifySignInSingleFailed -->
-                  <span class="method-name">verifySignInSingleFailed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IFS_Project-class-passed -->
         </div> <!-- panel IFS_Project -->
         <div panel-name="test-xml-IFS_Project" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -203,7 +167,7 @@
   &lt;parameter name=&quot;browserType&quot; value=&quot;chrome&quot;/&gt;
   &lt;test name=&quot;Au_Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ifs.tests.SignInPageTest&quot;/&gt;
+      &lt;class name=&quot;com.ifs.tests.SupportSectionTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Au_Test --&gt;
 &lt;/suite&gt; &lt;!-- IFS Project --&gt;
@@ -243,28 +207,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySignInFailed')
-data.setCell(0, 2, 'com.ifs.tests.SignInPageTest')
-data.setCell(0, 3, 16879);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySignInSingleFailed')
-data.setCell(1, 2, 'com.ifs.tests.SignInPageTest')
-data.setCell(1, 3, 6506);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySignInSucessfully')
-data.setCell(2, 2, 'com.ifs.tests.SignInPageTest')
-data.setCell(2, 3, 4306);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySignInEmpty')
-data.setCell(3, 2, 'com.ifs.tests.SignInPageTest')
-data.setCell(3, 3, 2969);
+data.setCell(0, 1, 'verifyCreateAnAccounPage')
+data.setCell(0, 2, 'com.ifs.tests.SupportSectionTest')
+data.setCell(0, 3, 12879);
 window.suiteTableData['IFS_Project']= { tableData: data, tableDiv: 'times-div-IFS_Project'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-IFS_Project">
               </div> <!-- times-div-IFS_Project -->
             </div> <!-- times-div -->
@@ -290,36 +242,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ifs.tests.SignInPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ifs.tests.SupportSectionTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeTestBaseSetup(chrome, https://qa.team2.mobiletechtool.com/hub/index.php)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4830 ms</span>
+                <span class="method-start">6575 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifySignInEmpty</span>
-                <span class="method-start">4836 ms</span>
-              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifySignInSucessfully</span>
-                <span class="method-start">7807 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySignInFailed</span>
-                <span class="method-start">12118 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySignInSingleFailed</span>
-                <span class="method-start">28999 ms</span>
+                <span class="method-name">verifyCreateAnAccounPage</span>
+                <span class="method-start">6581 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35506 ms</span>
+                <span class="method-start">19467 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

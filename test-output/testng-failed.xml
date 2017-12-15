@@ -5,14 +5,14 @@
   <parameter name="browserType" value="chrome"/>
   <test name="Au_Test(failed)">
     <classes>
-      <class name="com.ifs.tests.SignInPageTest">
+      <class name="com.ifs.tests.SupportSectionTest">
         <methods>
-          <include name="setUp"/>
-          <include name="verifySignInSucessfully"/>
           <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyCreateAnAccounPage"/>
         </methods>
-      </class> <!-- com.ifs.tests.SignInPageTest -->
+      </class> <!-- com.ifs.tests.SupportSectionTest -->
     </classes>
   </test> <!-- Au_Test(failed) -->
 </suite> <!-- Failed suite [IFS Project] -->

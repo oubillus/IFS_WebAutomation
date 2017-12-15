@@ -16,7 +16,7 @@ import org.testng.annotations.Parameters;
 public class Setup {
 	
 	private WebDriver driver;
-	static String driverPath = "C:\\Users\\oubillus\\Desktop\\ASD\\IFS\\";
+	//static String driverPath = "C:\\Users\\oubillus\\Desktop\\ASD\\IFS\\";
 
 			
 		public WebDriver getDriver() {
@@ -40,7 +40,7 @@ public class Setup {
 
 		private static WebDriver initChromeDriver(String appURL) {
 			System.out.println("Launching google chrome with new profile..");
-			System.setProperty("webdriver.chrome.driver", driverPath+ "chromedriver.exe");
+		//	System.setProperty("webdriver.chrome.driver", driverPath+ "chromedriver.exe");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			 ChromeOptions options = new ChromeOptions();
 			    options.addArguments("--start-maximized");
@@ -59,7 +59,7 @@ public class Setup {
 
 		private static WebDriver initFirefoxDriver(String appURL) {
 			System.out.println("Launching Firefox browser..");
-			System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
+		//	System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
 			WebDriver driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.navigate().to(appURL);
